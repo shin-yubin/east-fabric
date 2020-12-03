@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>East-Fabirc</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="common.css"
+    />
+    <style>.filterDiv img{width:100px; height:100px;}</style>
+  </head>
+  <body>
+    <div class="gnb gnb_page1">
+      <ul>
+        <li>
+          <a href="#">about</a>
+        </li>
+        <li>
+          <a href="#">news</a>
+        </li>
+        <li>
+          <a href="#">product</a>
+        </li>
+        <li>
+          <a href="#"> mypage</a>
+        </li>
+        <li>
+          <a href="#">login</a>
+        </li>
+      </ul>
+    </div>
+    <!-------global navigation bar--------->
+    <div class="wrap">
+      <div class="h1">east-fabric</div>
+      <div class="search_bar">
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="myFunction()"
+          placeholder="검색어를 입력하세요."
+          title="Type in a name"
+        />
+        <button
+          type="submit"
+          class="sch_smit"
+        >
+          검색
+        </button>
+      </div>
+      <div class="recommend_container">
+        <ul
+          id="myUL"
+          class="selct_section-kind"
+        >
+          <div class="recommend">
+            추천 검색어
+          </div>
+          <li>
+            <a href="#"
+              >에코백용 원단</a
+            >
+          </li>
+          <li>
+            <a href="#">DIY추천</a>
+          </li>
+          <li>
+            <a href="#">레이스</a>
+          </li>
+          <li>
+            <a href="#">실크</a>
+          </li>
+          <li>
+            <a href="#">부드러운</a>
+          </li>
+          <li>
+            <a href="#">은은한</a>
+          </li>
+        </ul>
+      </div>
+      <div class="see_more">
+        <button class="see_more-button">
+          see more
+        </button>
+      </div>
+      <ul
+        class="select_section-characteristic"
+      >
+        <li>소재</li>
+        <li>중량</li>
+        <li>폭</li>
+        <li>비침</li>
+        <li>드레이프</li>
+
+        <li>광택</li>
+      </ul>
+      <!---특성선택창,드롭다운 메뉴 사용 예정---->
+
+      <!---패브릭이 나타나는 영역, 링크로 연결되어있고, How TO - Filter Elements
+참고 예정---->
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+        <button
+          class="btn active"
+          onclick="filterSelection('all')"
+        >
+          Show all
+        </button>
+        <button
+          class="btn"
+          onclick="filterSelection('color')"
+        >
+          Color
+        </button>
+        <button
+          class="btn"
+          onclick="filterSelection('texture')"
+        >
+          Texture
+        </button>
+        <button
+          class="btn"
+          onclick="filterSelection('glossy')"
+        >
+          Glossy
+        </button>
+        <button
+          class="btn"
+          onclick="filterSelection('drape')"
+        >
+          Drape
+        </button>
+      </div>
+      <!---a box-->
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="search_engine2">
+        <div class="container">
+          <div
+            class="filterDiv texture"
+          >
+            <a href="#"
+              ><img
+                src="img/1.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div
+            class="filterDiv texture"
+          >
+            <a href="#"
+              ><img
+                src="img/2.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="filterDiv glossy">
+            <a href="#"
+              ><img
+                src="img/3.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div class="filterDiv glossy drape">
+            <a href="#"
+              ><img
+                src="img/4.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div class="filterDiv">
+            <a href="#"
+              ><img
+                src="img/5.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div class="filterDiv">
+            <a href="#">
+              <img
+                src="img/6.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="filterDiv">
+            <a href="#">
+              <img
+                src="img/7.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div class="filterDiv color">
+            <a href="#">
+              <img
+                src="img/8.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div
+            class="filterDiv animals"
+          >
+            <a href="#">
+              <img
+                src="img/9.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div
+            class="filterDiv texture color"
+          >
+            <a href="#">
+              <img
+                src="img/10.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div class="filterDiv">
+            <a href="#">
+              <img
+                src="img/11.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div
+            class="filterDiv texture"
+          >
+            <a href="#"
+              ><img
+                src="img/13.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div
+            class="filterDiv texture glossy"
+          >
+            <a href="#"
+              ><img
+                src="img/15.png"
+                alt=""
+            /></a>
+          </div>
+          <!---a box-->
+          <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/16.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/17.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/18.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color "
+          >
+            <a href="#">
+              <img
+                src="img/19.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/20.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/21.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/22.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/23.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/24.png"
+                alt=""
+              />
+            </a>
+          </div><div
+          class="filterDiv color"
+        >
+          <a href="#">
+            <img
+              src="img/25.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="filterDiv color drape"
+        >
+          <a href="#">
+            <img
+              src="img/26.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="filterDiv color drape"
+        >
+          <a href="#">
+            <img
+              src="img/27.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="filterDiv color"
+        >
+          <a href="#">
+            <img
+              src="img/28.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="filterDiv color"
+        >
+          <a href="#">
+            <img
+              src="img/29.png"
+              alt=""
+            />
+          </a></div>
+          <div
+            class="filterDiv color"
+          >
+            <a href="#">
+              <img
+                src="img/30.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div
+            class="filterDiv color "
+          >
+            <a href="#">
+              <img
+                src="img/31.jpg"
+                alt=""
+              />
+            </a>
+          </div>
+       <div
+            class="filterDiv color glossy"
+          >
+            <a href="#">
+              <img
+                src="img/32.png"
+                alt=""
+              />
+            </a>
+          </div>
+            <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/33.png"
+                alt=""
+              />
+            </a>
+          </div>
+         <!-- <div
+            class="filterDiv color drape"
+          >
+            <a href="#">
+              <img
+                src="img/34.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div><div
+        class="filterDiv color drape"
+      >
+        <a href="#">
+          <img
+            src="img/36.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>--> <!---a box-->
+        </div>
+           <!---box container-->
+      </div>
+      <!---search_engine2-->
+    
+    <div class="width-wrapper">
+      <div class="footer">
+        <div class="footer_contents">
+          <br /><br />
+          <p>
+            <strong
+              >개인정보 처리방침</strong
+            >
+          </p>
+
+          <p>
+            서울특별시 서대문구 대현동
+            52 이화여자대학교 I TEL :
+            010-2030-8968
+          </p>
+
+          <p>
+            Copyright(c) 2020 EF.com All
+            rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <!---스크립트-------------------------------------------------------------------------------->
+
+    <script>
+      function myFunction() {
+        var input,
+          filter,
+          ul,
+          li,
+          a,
+          i,
+          txtValue;
+        input = document.getElementById(
+          'myInput'
+        );
+        filter = input.value.toUpperCase();
+        ul = document.getElementById(
+          'myUL'
+        );
+        li = ul.getElementsByTagName(
+          'li'
+        );
+        for (
+          i = 0;
+          i < li.length;
+          i++
+        ) {
+          a = li[
+            i
+          ].getElementsByTagName(
+            'a'
+          )[0];
+          txtValue =
+            a.textContent ||
+            a.innerText;
+          if (
+            txtValue
+              .toUpperCase()
+              .indexOf(filter) > -1
+          ) {
+            li[i].style.display = '';
+          } else {
+            li[i].style.display =
+              'none';
+          }
+        }
+      }
+      filterSelection('all');
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName(
+          'filterDiv'
+        );
+        if (c == 'all') c = '';
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], 'show');
+          if (
+            x[i].className.indexOf(c) >
+            -1
+          )
+            w3AddClass(x[i], 'show');
+        }
+      }
+
+      // Show filtered elements
+      function w3AddClass(
+        element,
+        name
+      ) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(
+          ' '
+        );
+        arr2 = name.split(' ');
+        for (
+          i = 0;
+          i < arr2.length;
+          i++
+        ) {
+          if (
+            arr1.indexOf(arr2[i]) == -1
+          ) {
+            element.className +=
+              ' ' + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(
+        element,
+        name
+      ) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(
+          ' '
+        );
+        arr2 = name.split(' ');
+        for (
+          i = 0;
+          i < arr2.length;
+          i++
+        ) {
+          while (
+            arr1.indexOf(arr2[i]) > -1
+          ) {
+            arr1.splice(
+              arr1.indexOf(arr2[i]),
+              1
+            );
+          }
+        }
+        element.className = arr1.join(
+          ' '
+        );
+      }
+
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById(
+        'myBtnContainer'
+      );
+      var btns = btnContainer.getElementsByClassName(
+        'btn'
+      );
+      for (
+        var i = 0;
+        i < btns.length;
+        i++
+      ) {
+        btns[i].addEventListener(
+          'click',
+          function () {
+            var current = document.getElementsByClassName(
+              'active'
+            );
+            current[0].className = current[0].className.replace(
+              ' active',
+              ''
+            );
+            this.className += ' active';
+          }
+        );
+      }
+    </script>
+  </body>
+</html>

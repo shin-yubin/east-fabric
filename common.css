@@ -227,6 +227,7 @@ div#myBtnContainer {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 .search_engine2 {
   display: flex;
